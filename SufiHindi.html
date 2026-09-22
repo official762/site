@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sufi Hindi Lyrics</title>
+
+<style>
+
+a {
+  color: red;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ============================= */
+/* FONT SIZE BUTTONS             */
+/* ============================= */
+
+.font-controls {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px 0;
+  z-index: 1000;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.font-controls button {
+  background-color: #777;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 18px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.font-controls button:hover {
+  background-color: #555;
+}
+
+#fontSizeDisplay {
+  display: inline-block;
+  min-width: 55px;
+  font-size: 16px;
+  color: black;
+}
+
+
+/* ============================= */
+/* COLLAPSIBLE                   */
+/* ============================= */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+}
+
+
+/* ============================= */
+/* LYRICS CONTENT                */
+/* ============================= */
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: visible;
+}
+
+
+/* ============================= */
+/* COLORS                        */
+/* ============================= */
+
+#cr {
+  color: darkorange;
+}
+
+#ch {
+  color: #00008B;
+}
+
+#oyhoi {
+  color: lightseagreen;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ============================= -->
+<!-- FONT SIZE CONTROLS             -->
+<!-- ============================= -->
+
+<div class="font-controls">
+
+  <button type="button" onclick="changeFontSize(-2)">
+    A −
+  </button>
+
+  <span id="fontSizeDisplay">
+    16px
+  </span>
+
+  <button type="button" onclick="changeFontSize(2)">
+    A +
+  </button>
+
+</div>
+
+
+<hr />
+
+<pre id="sufi"></pre>
+    
+<button type="button" class="collapsible">Khwaja Mere Khwaja - A</button>
+<div class="content">
+<pre>
+    (Clap Pattern 🙏🏻)
+
+Khwaja ji, khwaja
+Khwaja ji, khwaja ji, khwaja ji
+Ya gharib nawaj, ya gharib nawaj
+Ya gharib nawaj, ya gharib nawaj
+Ya moinuddin, ya moinuddin, ya moinuddin
+Ya khwaja ji, ya khwaja ji
+Ya khwaja ji, ya khwaja ji
+Ya khwaja ji
+
+(🙏🏻 Ofbeat)
+Khwaja mere khwaja, dil mein sama ja
+Shaaho ka shah too, ali ka dulaara
+Khwaja mere khwaja, dil mein sama ja
+Shaaho ka shah too, ali ka dulaara
+Khwaja mere khwaja, dil mein sama ja
+Khwaja mere khwaja, dil mein sama ja
+Bekaso ki takdir tune hai sawari
+Bekaso ki takdir tune hai sawari
+Khwaja mere khwaja
+
+Tere darbar me khwaja noor ko hai dekha
+Tere darbar me khwaja sar jhukate hai auliya
+Tu hai unaalwali khwaja, rutba hai pyara
+Chaahane se tujhko khwaja ji mustafa ko paya(Clap 🚫)
+
+(Clap 🙏🏻🙏🏻)
+Khwaja mere khwaja dil mein sama ja aaja
+Shaaho ka shah tu, ali ka dulaara
+
+
+
+Khwaja mere khwaja, dil mein sama
+Shaaho ka shah tu, ali ka dulaara  x4
+
+Khwaja ji, khwaja ji
+khwaja ji, khwaja ji, khwaja ji  x4
+
+  </pre>
+</div>
+
+    
+   
+<button type="button" class="collapsible" id="F1">Kun Faya Kun - B</button>
+<div class="content">
+<pre>
+Ya Nizamuddin Auliya
+Ya Nizamuddin Sarkar
+
+Kadam badha le, haddon ko mita le
+Aaja khalipan mein pee ka ghar tera
+Tere bin khali aaja khalipan mein
+Tere bin khali aaja khalipan mein
+
+Rangreza, Rangreza
+Rangreza
+<b id="ch">Ho, Rangreza, Rangreza</b>
+
+Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+<b id="ch">Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun</b>
+
+Jab kahin pe kuch nahi, bhi nahi tha
+Wahi tha, wahi tha, wahi tha, wahi tha
+<b id="ch">Jab kahin pe kuch nahi, bhi nahi tha
+Wahi tha, wahi tha, wahi tha, wahi tha</b>
+
+Wo jo mujhmein samaaya, wo jo tujhmein samaaya
+Maula wahi-wahi maaya
+<b id="ch">Wo jo mujhmein samaaya, wo jo tujhmein samaaya
+Maula wahi-wahi maaya</b>
+
+<b id="ch">Kun fayakun Kun fayakun</b>
+Sadq allahu ali ul azeem
+
+Rangreza rang mera, tann mera mann
+Le-le rangaai chahe tann chahe mann
+<b id="ch">Rangreza rang mera, tann mera mann
+Le-le rangaai chahe tann chahe mann</b>
+
+Sajra savera mere tann barse
+Kajra andhera teri jalti lau
+<b id="ch">Sajra savera mere tann barse
+Kajra andhera teri jalti lau
+Qatra mila jo tere darr barse
+O, Maula, Maula</b>
+
+Kun fayakun Kun fayakun
+Kun fayakun Kun fayakun
+<b id="ch">Fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun</b>
+
+Jab kahin pe kuch nahi, bhi nahi tha
+Wahi tha, wahi tha, wahi tha, wahi tha
+<b id="ch">Jab kahin pe kuch nahi, bhi nahi tha
+Wahi tha, wahi tha, wahi tha, wahi tha
+Kun fayakun Kun fayakun</b>
+Sadq allahu ali ul azeem
+
+Sadaqa-Rosooluh-ul-Nabi-ul-Kareem
+<b id="ch">SalAllah hu alayhi wasallam
+SalAllah hu alayhi wasallam</b>
+
+Ho mujhpe karam sarkar tera
+Araj tujhe karde mujhe, mujhse hi riha
+Ab mujhko bhi ho deedar mera
+Karde mujhe mujhse hi riha, mujhse hi rihaaa
+
+Mann ke mere ye bharam
+Kachche mere ye karam
+Leke chale hain kahaan, main to jaanu hi na
+
+<b id="ch">Tu hai mujhmein samaaya, kahaan leke mujhe aaya
+Main hoon tujhmein samaaya, tere peechhe chala aaya
+Tera hi main ik saaya, tune mujhko banaya
+Main to jag ko naa bhaaya, tune gale se lagaya
+Haq tuhi hai khudaya, sach tuhi hai khudaya
+
+Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+Jab kahin pe kuch nahi, bhi nahi tha
+Wahi tha, wahi tha, wahi tha, wahi tha
+Jab kahin pe kuch nahi, bhi nahi tha
+Wahi tha, wahi tha, wahi tha, wahi tha
+
+Kun fayakun Kun fayakun
+Sadq allahu ali ul azeem</b>
+
+Sadaqa-Rosooluh-ul-Nabi-ul-Kareem
+SalAllah hu alayhi wasallam
+  </pre>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+<br /><br /><!----------------------------------><br /><br />
+    
+
+
+    
+    
+<button type="button" class="collapsible" id="F3">Bhar do jholi</button>
+<div class="content">
+<pre>Tere darbaar mein dil thaam ke woh aata hai
+Jisko tu chaahe, hey Nabi tu bulaata hai
+Tere dar pe sar jhukaaye main bhi aaya hoon
+Jiski bigdi haaye Nabi chaahe tu banata hai
+
+Bhar do jholi meri ya Muhammad
+Laut kar main naa jaaunga khali
+<b id="ch">Bhar do jholi meri ya Muhammad
+Laut kar main naa jaaunga khali</b>
+Bhar do jholi meri ya Muhammad
+Laut kar main naa jaaunga khali
+<b id="ch">Bhar do jholi meri ya Muhammad
+Laut kar main naa jaaunga khali</b>
+
+Band deedon mein bhar daale aansu
+Sil diye maine dardo ko dil mein
+<b id="ch">Band deedon mein bhar daale aansu
+Sil diye maine dardo ko dil mein</b>
+
+Jab talak tu bana de na bigdi
+Dar se tere na jaaye sawaali
+<b id="ch">Bhar do jholi meri ya Muhammad
+Laut kar main naa jaaunga khali</b>
+
+<b id="ch">Bhar do jholi..</b> aaka ji
+<b id="ch">Bhar do jholi..</b> hum sab ki
+<b id="ch">Bhar do jholi..</b> Nabi ji
+<b id="ch">Bhar do jholi meri Sarkar-e-Medina
+Laut kar main naa jaaunga khali</b>
+
+Music
+
+Khojte khojte tujhko dekho
+Kya se kya, ya Nabi ho gaya
+<b id="ch">Khojte khojte tujhko dekho
+Kya se kya, ya Nabi ho gaya</b>
+Bekhabar dar-ba-dar phir raha hoon
+Main yahan se wahan ho gaya hoon
+<b id="ch">Bekhabar dar-ba-dar phir raha hoon
+Main yahan se wahan ho gaya hoon</b>
+De de ya Nabi mere dil ko dilaasa
+Aaya hoon door se main hoke ruhaasa
+<b id="ch">De de ya Nabi mere dil ko dilaasa
+Aaya hoon door se main hoke ruhaasa</b>
+
+Kar de karam Nabi, mujhpe bhi zara sa
+Jab talak tu.. jab talak tu..
+Panaah de na dil ki
+Dar se tere na jaaye sawaali
+<b id="ch">Bhar do jholi meri ya Muhammad
+Laut kar main na jaaunga khaali</b>
+Bhar do jholi meri Tajdaar-e-Medina
+Laut kar main na jaaunga khaali
+<b id="ch">Bhar do jholi meri ya Muhammad
+Laut kar main na jaaunga khaali</b>
+
+Music
+
+Jaanta hai na tu kya hai dil mein mere
+Bin sune gin rahaa hai na tu dhadkane
+<b id="ch">Jaanta hai na tu kya hai dil mein mere
+Bin sune gin rahaa hai na tu dhadkane</b>
+Aah nikli hai toh chand tak jaayegi
+Tere taaron se meri duaa aayegi
+<b id="ch">Aah nikli hai toh chand tak jaayegi
+Tere taaron se meri duaa aayegi</b>
+
+Aye Nabi haan kabhi toh subah aayegi
+Jab talak tu sunega na dil ki
+Dar se tere na jaaye sawaali
+<b id="ch">Bhar do jholi meri ya Muhammad
+Laut kar main na jaaunga khaali</b>
+
+De taras kha taras mujhpe aaka
+Ab lagaa le tu mujhko bhi dil se
+<b id="ch">De taras kha taras mujhpe aaka
+Ab lagaa le tu mujhko bhi dil se</b>
+
+Jab talak tu mila de na bichhdi
+Darr se tere na jaaye sawaali
+<b id="ch">Bhar do jholi meri ya Muhammad
+Laut kar main na jaaunga khaali</b>
+<b id="cr">Bhar do jholi..</b> aaka ji
+<b id="ch">Bhar do jholi..</b> hum sab ki
+<b id="ch">Bhar do jholi..</b> Nabi ji
+<b id="ch">Bhar do jholi meri Sarkar-e-Medina
+Laut kar main naa jaaunga khali</b>
+
+<b id="ch">Dum dum Ali Ali dum Ali Ali
+Dum Ali Ali dum Ali Ali…</b>
+  </pre>
+    </div>
+
+   
+    
+<button type="button" class="collapsible">Dulhe Ka Sehra - F#</button>
+<div class="content">
+  <pre>
+.
+.
+.
+.
+.
+//शहनाईयों की सदा कह रही है
+खुशी की मुबारक घड़ी आ गई है
+सजी सुर्ख़ जोड़े में चाँद सी दुल्हन
+ज़मीं पे फ़लक़ से परी आ गई है
+
+आ आआ आ... (Tabla + 🙏🏻🙏🏻) आ आआ...
+आ आआआ...
+आ आआ आ... 🙏🏻🙏🏻 आ आआ...
+
+
+निनि सासा धध निनि पप धध मम प
+धध निनि पप धध मम पप गग म
+धध मम पप गग मम रेरे गग सा
+
+🙏🏻+🚫 दुल्हे का सेहरा सुहाना लगता है
+<b id="ch">दुल्हे का सेहरा सुहाना लगता है</b>
+दुल्हन का तो दिल दीवाना 🙏🏻🙏🏻 लगता है
+
+<b id="ch">दुल्हे का सेहरा सुहाना लगता है
+दुल्हन का तो दिल दीवाना लगता है</b>
+
+🙏🏻🙏🏻पल भर में कैसे बदलते हैं रिश्ते
+<b id="ch">पल भर में कैसे बदलते हैं रिश्ते</b>
+अब तो हर अपना बेगाना लगता है
+🙏🏻+🚫<b id="ch">दुल्हे का सेहरा सुहाना 🙏🏻🙏🏻लगता है
+दुल्हन का तो दिल दीवाना लगता है
+दुल्हे का सेहरा सुहाना लगता है
+दुल्हन का तो दिल दीवाना लगता है</b>
+
+Music 
+(Clap Pattern Single + Double + Single 🙏🏻 🙏🏻)
+
+🙏🏻+🚫 सात फेरों से बंधा जन्मों का ये बंधन
+प्यार से जोड़ा है रब ने प्रीत का दामन
+🙏🏻🙏🏻<b id="ch">सात फेरों से बंधा जन्मों का ये बंधन
+प्यार से जोड़ा है रब ने प्रीत का दामन</b>
+
+हैं नईं रस्में नईं कस्में नईं उलझन
+होंठ हैं खामोश लेकिन कह रही धड़कन
+
+
+🙏🏻 🙏🏻<b id="ch">धड़कन धड़कन धड़कन धड़कन
+धड़कन धड़कन धड़कन धड़कन
+धड़कन मेरी धड़कन, धड़कन तेरी धड़कन
+धड़कन मेरी धड़कन, धड़कन तेरी धड़कन
+
+धड़कन धड़कन धड़कन धड़कन
+
+धड़कन धड़कन धड़कन धड़कन धड़कन
+
+मेरी धड़कन मेरी धड़कन</b>
+
+मुश्किल.......मुश्किल मुश्किल
+🙏🏻+🚫 मुश्किल अश्क़ों को छुपाना 🙏🏻🙏🏻लगता है
+🙏🏻🙏🏻<b id="ch">मुश्किल अश्क़ों को छुपाना लगता है</b>
+दुल्हन का तो दिल दीवाना लगता है
+<b id="cr">पल भर में कैसे बदलते हैं रिश्ते</b>
+अब तो हर अपना बेगाना लगता है
+
+🙏🏻+🚫<b id="ch">दुल्हे का सेहरा सुहाना 🙏🏻🙏🏻लगता है
+🙏🏻🙏🏻दुल्हन का तो दिल दीवाना लगता है
+दुल्हे का सेहरा सुहाना लगता है
+दुल्हन का तो दिल दीवाना लगता है</b>
+
+Aalap / Music
+
+🙏🏻+🚫 मैं तेरी बाहों के झूले में 🙏🏻🙏🏻पली बाबुल
+जा रही हूं छोड़ के तेरी गली बाबुल
+🙏🏻🙏🏻(May Be Aalap)
+
+🙏🏻🙏🏻<b id="ch">मैं तेरी बाहों के झूले में पली बाबुल
+जा रही हूं छोड़ के तेरी गली बाबुल</b>
+खूबसूरत ये ज़माने याद आएंगे
+चाह के भी हम तुम्हें ना भूल पाएंगे
+
+🙏🏻+🚫मुश्किल दामन को छुड़ाना 🙏🏻🙏🏻लगता है
+दुल्हन का तो दिल दीवाना लगता है
+<b id="ch">मुश्किल दामन को छुड़ाना लगता है
+दुल्हन का तो दिल दीवाना लगता है</b>
+<b id="cr">पल भर में कैसे बदलते हैं रिश्ते</b>
+अब तो हर अपना बेगाना लगता है
+
+🙏🏻+🚫<b id="ch">दुल्हे का सेहरा सुहाना 🙏🏻🙏🏻लगता है
+🙏🏻🙏🏻दुल्हन का तो दिल दीवाना लगता है
+
+(Loop With 🙏🏻🙏🏻)
+दुल्हे का सेहरा सुहाना लगता है
+दुल्हन का तो दिल दीवाना लगता है
+</b>
+
+  </pre>
+</div>
+
+  
+    
+
+<br /><br /><!----------------------------------><br /><br />    
+
+
+    
+    
+<button type="button" class="collapsible" id="E2">Chaudhari Mashup - E</button>
+<div class="content">
+
+  <pre>
+❁(Chaudhary)
+Music
+
+dhum pach
+<span id="ch">With Tabla Clap 🙏🏻🙏🏻</span>
+
+🙏🏻🙏🏻 O, lukk-chipp na javo ji, manney deed karavo ji
+Rae kyun tarsave ho, manney sakal dikhavo ji
+
+🙏🏻🙏🏻 O, lukk-chipp na <b id="ch">javo ji</b>, manney deed <b id="ch">karavo ji</b>
+Rae kyun <b id="ch">tarsave ho</b>, manney sakal <b id="ch">dikhavo ji</b>
+
+🙏🏻🙏🏻🙏🏻 Thaari saraarat sab jaanu main, chaudhari
+Mahaarey se levo na panga ji main kehan lagi
+
+🙏🏻Mahaarey hivdhey mein jaagi dhaunkani
+🙏🏻🙏🏻Rae chandaa main <b id="ch">thaari chandni</b>
+Maney daaman mein <b id="ch">baandhi khusi</b>
+<b id="ch">🚫 Rae jhoom , jhoom, jhoom jhoom baa jhoom🙏🏻🙏🏻</b>
+
+🙏🏻🙏🏻Mahaarey hivdhey mein jaagi dhaunkani
+🙏🏻🙏🏻Rae chandaa main <b id="ch">thaari chandni</b>
+Maney daaman mein <b id="ch">baandhi khusi</b>
+<b id="ch">🚫 Rae jhoom , jhoom, jhoom jhoom baa jhoom🙏🏻🙏🏻</b>
+
+Music 🙏🏻🙏🏻
+
+🙏🏻 Moh re liya tanney aesa khela daav////stop
+
+🙏🏻 Moh re liya tanney <b id="ch">aesa khela daav</b>
+🙏🏻 Khaavey hichkoley mahaarey <b id="ch">mann ki naav</b>
+🙏🏻🙏🏻🙏🏻 Thaari saraarat sabb jaanu main chaudhari
+🙏🏻🙏🏻🙏🏻 Mahaarey se levo na panga ji main 🙏🏻 kehan 🙏🏻 lagi 🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻...
+
+🚫Mahaarey hivdhey mein jaagi dhaunkani
+🙏🏻🙏🏻Rae chandaa main <b id="ch">thaari chandni</b>
+Maney daaman mein <b id="ch">baandhi khusi</b>
+<b id="ch">🚫 Rae jhoom , jhoom, jhoom jhoom baa jhoom</b>
+
+🙏🏻🙏🏻Mahaarey hivdhey mein jaagi dhaunkani
+🙏🏻🙏🏻Rae chandaa main <b id="ch">thaari chandni</b>
+Maney daaman mein <b id="ch">baandhi khusi</b>
+<b id="ch">🚫 Rae jhoom , jhoom, jhoom jhoom baa jhoom</b> (Clap Fade Out)
+
+❁(Ghoomer)
+🙏🏻
+<b id="ch">Aavo ji aavo ji Ghoomardi khelba ne
+Padharo sa Ghoomardi khelba ne
+
+Balam tharo ghurar ghurar ghurraave
+Aa so mharo jivdo ghano hichkaave
+
+O ghabraave mann mein bhaave
+Mharo badilo Bhanwar mann bhaave
+
+Chamak cham baaje payal baaje
+Baaisa khele…
+
+Jhamak jhamak ghunghra baaje
+
+Aao sa ghoomardi khelba ne
+Aao sa ghoomardi khelba ne
+</b>
+Dhanak preet ki sar pe odh kar
+Ghoomar ghoomar ghoome
+<b id="ch">Haan ghoomar ghoomar ghoome</b>
+O… ralak reet sab jag ki chhod kar
+Ghoomar ghoomar ghoome bharke
+<b id="ch">Dhola waale thaath
+🙏🏻🙏🏻Ghoomar ghoomar ghoomar ghoomar ghoomar ghoome re
+Ghoomar ghoomar ghoome re baaisa , Ghoomar ghoome re
+</b>
+🙏🏻🙏🏻
+Ho.. mhaari saari kaaya bole
+Dhola ji ki chhaaya hole
+Mann ka ghoomar jab bhi dole
+Soonepan mein mela bharke
+<b id="ch">Dhola waale thaath ghoomar
+🙏🏻🙏🏻Ghoomar ghoomar ghoomar ghoomar ghoome re
+Ghoomar ghoomar ghoome re BaaiSa
+Ghoomar ghoome re</b>
+O.. aavo ji mhara piya ji…
+
+🙏🏻
+<b id="cr">Thaare ehsaason ki raunak hai mhari Diwali
+Mann mahal ki saari deewaarein
+Thaare rang rangwa li (x2)</b>
+🙏🏻
+Paake thara saaya tann hai jagmagaya
+Taaron bhari ho gayi mhari saari kaali raat bharke
+<b id="ch">Dhola waale thaanth
+🙏🏻Ghoomar ghoomar ghoomar ghoomar ghoomar ghoome re
+Ghoomar ghoomar ghoome re BaiSa , Ghoomar ghoome re
+
+Dhanak preet ki sar pe odh kar
+Ghoomar ghoomar ghoome</b>
+
+Lalak reet sab jag ki chhod kar
+Ghoomar ghoomar ghoome bharke
+<b id="ch">Dhola waale thaath
+Ghoomar ghoomar ghoomar ghoomar ghoomar ghoome re
+Ghoomar ghoomar ghoome re Baaisa , Ghoomar ghoome re
+</b>
+🙏🏻🙏🏻Music
+
+❁(Pallo latke)
+🙏🏻🙏🏻🙏🏻
+Pallo latke re mharo pallo latke x2
+🙏🏻 Jara sa...🚫Jara sa...🚫Jara sa...
+<b id="ch">Jara sa tedho ho ja baalma ,Mharo pallo latke x 2</b>
+
+Gori jiyo bhatke re myaro jiyo bhatke
+Zara sa un zara sa aa
+<b id="ch">Zara sa sidho ho ja zalima mharo jiyo bhatke    </b>
+
+❁(Banna Re)
+
+बन्ना रे बागा में झूला घाल्या 
+बन्ना रे बागा में झूला घाल्या 
+म्हारी बन्नी ने म्हारी लाडी ने
+म्हारी बन्नी ने झूलन दीज्यो बन्ना गेंन गजरा
+म्हारी लाडी ने हिंडन दीज्यो बन्ना गेंन गजरा
+बन्ना रे बागा में झूला घाल्या 
+बन्ना रे बागा में हिंडा घाल्या 
+म्हारी बन्नी ने म्हारी लाडी ने
+म्हारी बन्नी ने झूलन दीज्यो बन्ना गेंन गजरा
+म्हारी लाडी ने हिंडन दीज्यो बन्ना गेंन गजरा
+बन्ना रे जैपुरीये थे जाइजो 
+बन्ना रे जैपुरीये थे जाइजो
+म्हारी बन्नी रे म्हारी लाडी रे
+म्हारी बन्नी रे रखड़ी लाइजो बन्ना गेंन गजरा
+म्हारी बन्नी रे रखड़ी लाइजो बन्ना गेंन गजरा
+
+❁(Piya Re)
+🚫 Naino ne thari kaisa jaadoo kiya re
+Thare bina laage nahi mara jiya 🙏🏻🙏🏻 re ho
+<b id="ch">Thare bina laage nahi mara jiya re</b>
+
+🙏🏻🙏🏻<b id="cr">Piya re, piya re, piya re, piya re</b>
+<b id="ch">Thare 🙏🏻+🚫 bina laage nahi mara jiya 🙏🏻🙏🏻 re ho
+Thare bina laage nahi mara jiya re</b>
+
+Music (Clap 🙏🏻🙏🏻🙏🏻🙏🏻 After 🙏🏻🙏🏻)
+
+🙏🏻+🚫 Thare bina mohe chain na aave
+🙏🏻<b id="ch">Dhak, dhak, dhak mara jee ghabrave</b>
+🙏🏻 Thare bina mohe chain na aave
+<b id="ch">Dhak, dhak, dhak mara jee ghabrave</b>
+Bole basuriya sun re sawariya
+🙏🏻🙏🏻<b id="ch">Bole basuriya sun re sawariya</b>
+Thare bina mohe kuch nahi bhave🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻+🚫
+🙏🏻🙏🏻🙏🏻🙏🏻Piya re, piya re, piya re, piya re
+<b id="ch">🙏🏻+🚫Thare bina laage nahi mara jiya 🙏🏻🙏🏻re ho
+🙏🏻🙏🏻Thare bina laage nahi mara jiya re</b>
+
+
+(Optional Antara )
+🙏🏻+🚫Pyar ki kaliyan kab ki rakhiyan
+🙏🏻<b id="ch">Rava tak tak mainte thakiyan</b>
+🙏🏻Pyar ki kaliyan kab ki rakhiyan
+<b id="ch">Rava tak tak mainte thakiyan</b>
+Saanjh savere dekhan lagi...
+🙏🏻🙏🏻<b id="ch">Saanjh savere dekhan lagi</b>
+Thari suratiya mari akhiyan🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻+🚫
+🙏🏻🙏🏻🙏🏻🙏🏻Piya re, piya re, piya re, piya re
+🙏🏻+🚫<b id="ch">Thare bina laage nahi mara jiya re ho
+🙏🏻🙏🏻Thare bina laage nahi mara jiya re</b>
+
+
+❁(Dama dam Mast Kalandar)
+O.....
+Laal meri pat rakhiyo bala Jhoole Laalan
+Ho laal meri......
+
+Ho laal meri pat rayhio bala Jhoole Laalan
+Sindhri da, Sehwan da Sakhi Shabaaz Kalandar
+
+🙏🏻🙏🏻 <b id="ch">Duma dum mast Kalandar
+Ali da pehla number
+
+Duma dum mast Kalandar
+Sakhi Shabaaz Kalandar</b>
+
+🙏🏻🙏🏻 Hoo laal meri...Laal Meri
+
+laal meri pat rayhio bala Jhoole Laalan
+Sindhri da, Sehwan da Sakhi Shabaaz Kalandar
+
+<b id="ch">Duma dum mast Kalandar
+Ali da pehla number
+
+Duma dum mast Kalandar
+Sakhi Shabaaz Kalandar</b>
+
+Hoo laal meri...Laal Meri
+
+MUSIC (🙏🏻🙏🏻🙏🏻🙏🏻)
+
+🚫 4 chiraag tere baran hamesha...🙏🏻
+
+🙏🏻 4 chiraag tere baran hamesha
+5jh vaan mein baran Ho.🙏🏻🙏🏻....
+
+🙏🏻 5jh vaan mein baran aayian bala Jhoole Laalan
+Sindhri da, Sehwan da Sakhi Shaabaaz Kalandar
+
+🙏🏻🙏🏻 <b id="ch">Duma dum mast Kalandar
+Ali da pehla number
+
+Duma dum mast Kalandar
+Sakhi Shabaaz Kalandar</b>
+
+Hoo laal meri...Laal Meri
+
+Ho laal meri pat rayhio bala Jhoole Laalan
+Sindhri da, Sehwan da Sakhi Shabaaz Kalandar
+
+🙏🏻🙏🏻 <b id="ch">Duma dum mast Kalandar
+Ali da pehla number
+
+Duma dum mast Kalandar
+Sakhi Shabaaz Kalandar</b>
+
+
+Duma dum....Duma dum........
+<!--
+❁(Alla Hoo)
+-->
+
+
+</pre>
+</div>
+
+    
+
+<button type="button" class="collapsible">Ye Tune Kya Kiya Medly - E</button>
+<div class="content">
+<pre>
+
+❁(Ye Tune Kya Kiya...)
+
+Ishq woh balaa hai
+Ishq woh balaa hai
+Jisko chhua jisne woh jalaa hai
+Dil se hota hai shuru
+Par kambakht sar pe chadha hai
+Kabhi khud se, kabhi khuda se
+Kabhi zamaane se ladaa hai
+Itna hua badnaam phir bhi
+Har zubaan pe adaa hai
+
+Ishq ki saazishein
+
+Ishq ki baaziyaan
+Haara na khel ke
+Do dilon ka juaa
+<b id="ch">
+🙏🏻🙏🏻Kyun tune itni fursat ki
+Kyun dil mein itni harkat ki
+Ishaq mein itni barqat ki
+Ye tune kya kiya..
+Phiroon ab maara maara main
+Chaand se bichhda taara main
+Dil se itna kyun haara main
+Yeh tune kya kiya..</b>
+
+Saari duniya se jeet ke main aaya hoon idhar
+Tere aage hi main haara kiya tune kya asar
+<b id="ch">
+Main dil ka raaz kehta hoon
+Ke jab jab saansein leta hoon
+Tera hi naam leta hoon
+Yeh tune kya kiya..</b>
+
+🙏🏻🙏🏻Music
+
+🙏🏻Meri baahon ko teri saanson ki jo
+Aadatein lagi hain waisi
+Jee leta hoon ab main thoda aur
+Mere dil ki rait pe aankhon ki jo
+Pade parchhai teri
+Pee leta hoon tab main thoda aur
+🙏🏻🙏🏻Jaane kaun hai tu meri
+Main na jaanu yeh magar
+Jahaan jaaoon main karoon main wahaan
+Tera hi zikar
+
+<b id="ch">
+Mujhe tu raazi lagti hai
+Jeeti hui baazi lagti hai
+Tabeeyat taazi lagti hai
+Ye tune kya kiya..
+
+Main dil ka raaz kehta hoon
+Ke jab jab saansein leta hoon
+Tera hi naam leta hoon
+Yeh tune kya kiya..</b>
+
+--------------------------------------------------------------------------------
+❁(Tum Jo Aaye...)
+
+Chahaton ka mazaa, faasalon mein nahin
+Aa chupa loon tumhe hauslon mein kahin
+Sab se upar likha, hai tere naam ko
+Khwaishon se jude silsilon mein kahin
+
+🙏🏻Khwaishein milne ki tumse, <b id="ch">khwaishein milne ki tumse
+Roz hoti hai nayi</b>
+🙏🏻+🚫Mere dil ki jeet meri maat ban gayi
+Hoo tum jo aaye zindagi mein baat ban gayi
+
+<b id="ch">
+🙏🏻🙏🏻Paaya maine, paaya tumhe, rab ne milaya tumhe, 
+Honthon pe sajaya tumhe, nag mein sagaya tumhe
+Paaya maine, paaya tumhe, sab se chupaya tumhe, 
+Sapna banaya tumhe, neendhon mein bulaya tumhe</b>
+
+------------------------------------------------------------------------------------
+❁(Ishq Sufiyana...)
+
+🙏🏻Sochu Tujhe Toh Hai Subah
+Sochu Tujhe Toh Shaam Hai
+
+Ho O Manzilon Pe Ab To
+Meri Ek Hi Tera Naam Hai
+🙏🏻+🚫 Tere Aag Me Hi Jalte
+Koyle Se Heera Bante
+Khwaabon Mein Aagey Chalte Hain Tujhe Batana
+
+Tere Waaste Mera Ishq Sufiyana
+<b id="ch">Mera Ishq Sufiyana
+Mera Ishq Sufiyana</b>
+
+
+</pre>
+</div>
+    
+
+
+<button type="button" class="collapsible">Hasta Hua x Tum To Thehre x O Meri Zohra Jabi - G</button>
+<div class="content">
+  <pre>
+
+Hansataa hua nooraani cheharaa
+Kaali zulfen rang sunaharaa
+Teri javanee tauba-tauba re
+Dilruba, o dilruba
+Dilruba, o dilruba
+
+
+
+Pehle teri aankhon ne lut liya door se
+Pehle teri...
+Pehle teri aankhon ne lut liya door se
+Phir ye sitam tan-tan ke dekhnaa gurur se
+
+O deewaane, o deewaane
+Too kya jaane, haan, too kya jaane
+Dil ki bekaraariyaan hain kya
+
+
+
+
+Jee Bhar Ke Tadpale Jee Bhar Ke Pyar Kar...
+Sab kuch ganvaara he thodaa sa pyaar kar
+
+Too hai dil mein, oe, too hai dil mein
+Dil mushkil mein, hae, dil mushkil mein
+Ab naa dil kee mushkilen badha
+
+
+<hr />
+
+
+तुम तो ठहरे परदेसी, साथ क्या निभाओगे
+सुबह पहली गाड़ी से, घर को लौट जाओगे
+सुबह पहली गाड़ी से...
+
+जब तुम्हें अकेले में मेरी याद आएगी
+(खिंचे खिंचे हुए रहते हो, ध्यान किसका है
+ज़रा बताओ तो ये इम्तेहान किसका है
+हमें भुला दो मगर ये तो याद ही होगा
+नई सड़क पे पुराना मकान किसका है)
+जब तुम्हें अकेले में मेरी याद आएगी
+आँसुओं की बारिश में तुम भी भीग जाओगे
+तुम तो ठहरे परदेसी...
+
+ग़म की धूप में दिल की हसरतें न जल जाएं
+(तुझको देखेंगे सितारे तो ज़िया मांगेंगे
+और प्यासे तेरी जुल्फों से घटा मांगेंगे
+अपने कांधे से दुपट्टा न सरकने देना
+वरना बूढ़े भी जवानी की दुआ मांगेंगे (ईमान से))
+ग़म की धूप में दिल की हसरतें न जल जाएं
+गेसुओं के साए में कब हमें सुलाओगे
+तुम तो ठहरे परदेसी...
+
+
+
+<hr/>
+
+ऐ मेरी ज़ोहरा ज़बीं, तुझे मालूम नहीं
+तू अभी तक है हंसीं और मैं जवां
+तुझपे क़ुरबान मेरी जान मेरी जान
+
+ऐ मेरी ज़ोहरा ज़बीं, तुझे मालूम नहीं
+तू अभी तक है हंसीं और मैं जवां
+तुझपे क़ुरबान मेरी जान मेरी जान
+
+ये शोखियाँ ये बाँकापन
+जो तुझमें है कहीं नहीं
+ये शोखियाँ ये बाँकापन
+जो तुझमें है कहीं नहीं
+दिलों को जीतने का फ़न
+जो तुझमें है कहीं नहीं
+
+मैं तेरी
+मैं तेरी आँखों में पा गया दो जहाँ
+मैं तेरी
+मैं तेरी आँखों में पा गया दो जहाँ
+
+ऐ मेरी ज़ोहरा ज़बीं, तुझे मालूम नहीं
+तू अभी तक है हंसीं और मैं जवां
+तुझपे क़ुरबान मेरी जान मेरी जान
+
+तू मीठे बोल जान-ए-मन
+जो मुस्कुराके बोल दे
+तू मीठे बोल जान-ए-मन
+जो मुस्कुराके बोल दे
+तो धडकनों में आज भी
+शराबी रंग घोल दे
+.
+
+ओ सनम
+ओ सनम मैं तेरा आशिक़-ए-जाबिदाँ
+ओ सनम
+ओ सनम मैं तेरा आशिक़-ए-जाबिदाँ
+
+ऐ मेरी ज़ोहरा ज़बीं, तुझे मालूम नहीं
+तू अभी तक है हंसीं और मैं जवां
+तुझपे क़ुरबान मेरी जान मेरी जान
+
+ऐ मेरी ज़ोहरा ज़बीं, तुझे मालूम नहीं
+तू अभी तक है हंसीं और मैं जवां
+तुझपे क़ुरबान मेरी जान मेरी जान
+
+
+
+
+"कजरा मोहब्बत वाला
+अँखियों में ऐसा डाला
+कजरे ने ले ली मेरी जान
+हाय रे मैं तेरे कुर्बान
+
+दुनिया है मेरे पीछे
+लेकिन मैं तेरे पीछे
+अपना बना ले मेरी जान
+हाय रे मैं तेरे कुर्बान
+
+आयी हो कहाँ से गोरी आँखों में प्यार ले के
+चढ़ती जवानी की ये पहली बहार ले के
+दिल्ली शहर का सारा मीनाबाज़ार ले के
+झुमका बरेली वाला, कानों में ऐसा डाला
+झुमके ने ले ली मेरी जान
+हाय रे मैं तेरे कुर्बान
+
+मोटर न बंगला माँगू, झुमका न हार माँगू
+दिल को जलाने वाले, दिल का क़रार माँगू
+सैय्याँ बेदर्दी मेरे, थोड़ा सा प्यार माँगू
+किस्मत बना दे मेरी, दुनिया बसा दे मेरी
+कर ले सगाई मेरी जान
+हाय रे मैं तेरे कुर्बान
+
+जब से है देखा तुझको, हो गये गुलाम तेरे
+अपना बना ले गोरी, आयेंगे काम तेरे
+अपना ये जीवन सारा लिख देंगे नाम तेरे
+कुर्ता ये जालीवाला, उसपर मोतियन की माला
+कुर्ते ने ले ली मेरी जान
+हाय रे मैं तेरे कुर्बान"
+
+<hr />
+
+
+
+
+
+  </pre>
+    </div>
+
+
+    
+<button type="button" class="collapsible" id="I1">Bulleya Mashup - E</button>
+<div class="content">
+<pre>
+Bulleya 
+Dekho chand aya 
+Tere naina - tera naina raah sajade
+Tum tak - ik tak ik tak
+
+........................................
+
+
+Kuch rishton ka namak hi doori hota hai
+Na milna bhi bahut zaroori hota hai
+
+Dum dum, dum dum tu mera
+Dum dum, dum dum mera hal
+Dum dum, dum dum tu mera
+Dum dum, dum dum mera hal
+Dum dum, dum dum..
+
+Tu baat kare ya na mujhse
+Chahe aankhon ka pegaam na le
+Par ye mat kehna are o pagle
+Mujhe dekh na tu, mera naam na le
+
+Tujhse mera deen dharam hai
+Mujhse teri khudai (x2)
+
+Tu bole toh ban jaaun
+Main Bulleh Shah saudai
+Main bhi naachun..
+Main bhi naachun manau sohne yaar ko
+Chalun main teri raah bulleya
+Main bhi naachun rijhaun sohne yaar ko
+Karun na parwah Bulleya
+
+Mera har dum dum har dum tu
+Mera har dum dum har dum tu
+Mera har dum dum har dum tu
+Mera har dum tu
+
+Mera mehram tu, marham tu
+Mera dum dum har dum tu
+Mera har dum dum har dum tu
+Mera har dum tu
+
+Maana apna ishq adhura
+Dil na ispe sharminda hai
+Poora hoke khatam hua sab
+Jo hai aadha wo hi zinda hai
+
+Ho bethi rehti hai umeedein
+Tere ghar ki dehlizon pe
+Jiski na parwaaz khatam ho
+Dil ye mera wahi parinda hai...
+
+Bakshe tu jo pyaar se mujhko
+Toh ho meri rihaai (x2)
+
+Tu bole toh ban jaaun
+Main Bulleh Shah saudai
+Main bhi naachun..
+
+Main bhi naachun manau sohne yaar ko
+Chalun main teri raah Bulleya
+Main bhi naachun rijhaun sohne yaar ko
+Karun na parwah Bulleya
+
+..................................................
+
+देखो चाँद आया, चाँद नज़र आया
+देखो चाँद आया, चाँद नज़र आया
+देखो चाँद आया, चाँद नज़र आया
+
+आया आया आया, चाँद आया शर्माया
+आया आया आया, चाँद आया शर्माया
+
+तू भी आजा साँवरिया
+
+........................................
+
+Tere naina,  raahein saja dein
+Tere naina,  doori mita dein
+Tere naina, dhadkan ko badha dein
+Tere naina, palkon mein sama lein
+Wallaah…
+
+Zakhm pe marham,  tere naina
+Phoolon pe shabnam,  tere naina
+Jag bhoole bhoole,  tere naina
+Dil chhoo le chhoo le, tere naina
+
+Tere nainon ke aage to taare bhi sharmaaye
+Pa ni sa ni sani sa ni dha pa ma ga re sa
+
+Tere Naina Tere Naina Tere Naina Re
+Tere Naina Tere Naina Tere Naina Re
+
+Aise Naino Ki Baaton Me Koi Kyon Na Aaye
+
+Ho..Tere Naina Tere Naina Tere Naina Re
+Tere Naina Tere Naina Tere Naina Re
+
+..................................................
+
+तेरी काली अँखियों से जींद मेरी जागे
+धड़कन से तेज़ दौडूँ सपनों से आगे
+अब जाँ लुट जाए ये जहां छुट जाए
+संग प्यार रहे मैं रहूँ ना रहूँ
+
+सजदा तेरा सजदा
+दिन रैन करूँ ना ही चैन करूँ
+सजदा तेरा सजदा
+रत वार करूँ मेरी जान तरूँ
+
+</pre></div>
+
+
+    
+
+<br /><br /><!----------------------------------><br /><br />
+
+
+    
+    
+<button type="button" class="collapsible">Teri Diwani - C</button>
+<div class="content"><pre>
+प्रीत की लत मोहे ऐसी लागी
+हो गई मैं मतवारी
+बल बल जाऊं अपने पिया को
+के मैं जाऊं वारी वारी
+मोहे सुध बुध ना रही.… तन मन की
+ये तो जाने दुनिया सारी
+बेबस और लाचार... फिरू मैं
+हारी मैं दिल हारी
+हारी मैं... दिल हारी
+
+तेरे नाम से जी लूं
+तेरे नाम से मर जाऊं...
+तेरी जान के सदके मैं कुछ ऐसा कर जाऊं
+तूने क्या कर डाला मर गयी मैं मिट गयी मैं
+हो री हा हा री हो गयी मैं
+तेरी दीवानी... दीवानी
+तेरी दीवानी... दीवानी
+
+इश्क जुनूं जब हद से बढ़ जाए
+इश्क जुनूं जब हद से बढ़ जाए
+हंसते हंसते आशिक सूली चढ़ जाए
+इश्क का जादू, सर चढ़कर बोले
+इश्क का जादू, सर चढ़कर बोले
+खूब लगा लो पहरे रस्ते रब खोले
+यही इश्क दी मर्ज़ी हैं
+यही रब दी मर्ज़ी हैं
+यही इश्क दी मर्ज़ी हैं
+यही रब दी मर्ज़ी हैं
+तेरे बिन जीना कैसा
+हाँ खुदगर्जी है
+
+तूने क्या कर डाला मर गयी मैं मिट गयी मैं
+हो री हा हा री हो गयी मैं
+तेरी दीवानी... दीवानी
+तेरी दीवानी... दीवानी
+
+हे मैं रंग रंगीली दीवानी
+हे मैं अलबेली मैं मस्तानी
+गाऊं, बजाऊं, सबको रिझाऊं
+हे मैं दींन धर्म से बेगानी
+हे मैं दीवानी, मैं दीवानी
+
+तेरे नाम से जी लूं
+तेरे नाम से मर जाऊं...
+तेरे नाम से जी लूं
+तेरे नाम से मर जाऊं
+तेरी जान के सदके मैं कुछ ऐसा कर जाऊं
+तूने क्या कर डाला मर गयी मैं मिट गयी मैं
+हो री हा हा री हो गयी मैं
+तेरी दीवानी... दीवानी
+तेरी दीवानी... दीवानी
+तेरी दीवानी... दीवानी
+तेरी दीवानी... दीवानी
+तेरी दीवानी... दीवानी
+तेरी दीवानी... दीवानी
+</pre></div>
+
+
+    
+<button type="button" class="collapsible">Aaonge Jab Tum - E</button>
+<div class="content"><pre>
+आओगे जब तुम, ओ, साजना
+आओगे जब तुम, ओ, साजना
+अंगना फूल खिलेंगे
+
+बरसेगा सावन
+बरसेगा सावन झूम-झूम के
+दो दिल ऐसे मिलेंगे
+
+आओगे जब तुम, ओ, साजना
+अंगना फूल खिलेंगे
+
+नैना तेरे कजरारे हैं
+नैनों पे हम दिल हारे हैं
+अंजाने ही तेरे नैनों ने
+वादे किए कई सारे हैं
+
+साँसों की लय मद्धम चले
+तोहसे कहे, बरसेगा सावन
+बरसेगा सावन झूम-झूम के
+दो दिल ऐसे मिलेंगे
+
+आओगे जब तुम, हो, साजना
+अंगना फूल खिलेंगे
+
+चंदा को ताकूँ रातों में
+है ज़िंदगी तेरे हाथों में
+पलकों पे झिलमिल तारे हैं
+आना भरी बरसातों में
+
+सपनों का जहाँ होगा खिला-खिला
+बरसेगा सावन
+बरसेगा सावन झूम-झूम के
+दो दिल ऐसे मिलेंगे
+
+</pre></div>
+
+
+
+<button type="button" class="collapsible">Man Ki Lagan - G</button>
+<div class="content"><pre>
+ओ लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+गली गली घूमे दिल तुझे ढूँढे
+गलीगली घूमे दिल तुझे ढूँढे
+तेरे बिन तरसे नयन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+
+आ जा ओ मेरी जाना
+मेरे दिल का जहाँ
+मांगे तेरी ख़बर
+ढूँढे तेरा निशाँ
+लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+गलीगली घूमे दिल तुझे ढूँढे
+गलीगली घूमे दिल तुझे ढूँढे
+तेरे बिन तरसे नयन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+
+तेरा तुझको सौंप दे क्या लागत है मोर
+मेरा मुझमे कुछ नाहीं जो होवत सो तोर
+तेरे बिन मेरा मन
+जैसे बन में हिरन
+जैसे पगली पवन
+लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+लगन लागी तुम से मन की लगन
+
+Sargam End
+</pre></div>    
+    
+
+    
+<button type="button" class="collapsible">Saiyaan - A</button>
+<div class="content"><pre>
+हीरे-मोती मैं ना चाहूँ
+मैं तो चाहूँ संगम तेरा
+मैं तो तेरी, सैयां
+तू है मेरा, सैयां, सैयां
+
+तू जो छू ले प्यार से, आराम से मर जाऊँ
+आजा, चंदा बाँहों में
+तुझ में ही गुम हो जाऊँ मैं
+तेरे नाम में खो जाऊँ
+
+सैयां, सैयां
+
+
+मेरे दिल खुशी से झूमें, गाएँ रातें
+पल-पल मुझे डुबाएँ जाते-जाते
+तुझे जीत, जीत हारूँ, यह प्राण, प्राण वारूँ
+हाय, ऐसे मैं निहारूँ, तेरी आरती उतारूँ
+तेरे नाम से जुड़े हैं सारे नाते
+
+सैयां (सैयां), सैयां (सैयां)
+
+
+बन के माला प्रेम की तेरे तन पे झर-झर जाऊँ
+बैठूँ नैया प्रीत की
+संसार से तर जाऊँ मैं
+तेरे प्यार से तर जाऊँ
+
+सैयां (सैयां), सैयां (सैयां)
+
+यह नरम-नरम नशा है बढ़ता जाए
+कोई प्यार से घुँघटिया देता उठाए
+अब बावला हुआ मन, जग हो गया है रोशन
+यह नई-नई सुहागन हो गई है तेरी जोगन
+कोई प्रेम की पुजारन मंदिर सजाए
+
+सैयां (सैयां), सैयां (सैयां)
+सैयां, सैयां (सैयां)
+
+हीरे-मोती मैं ना चाहूँ
+मैं तो चाहूँ संगम तेरा
+(सैयां) मैं ना जानूँ, तू ही जाने
+मैं तो तेरी, तू है मेरा
+(सैयां) मैं ना जानूँ, तू ही जाने
+मैं तो तेरी, तू है मेरा
+मैं तो तेरी, तू है मेरा
+</pre></div>
+    
+    
+ 
+<button type="button" class="collapsible">Jiya Dhadak Dhadak - G</button>
+<div class="content"><pre>
+तुझे देख-देख सोना
+तुझे देख-देख सोना, तुझे देख कर है जगना
+मैंने ये ज़िंदगानी, संग तेरे बितानी
+तुझमें बसी है मेरी जान हाए
+
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+
+
+तुझे देख-देख सोना, तुझे देख कर है जगना
+मैंने ये ज़िंदगानी, संग तेरे बितानी
+तुझमें बसी है मेरी जान हाए
+
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+
+कबसे है दिल में मेरे, आरमां कई अनकहे
+कबसे है दिल में मेरे, आरमां कई अनकहे
+इनको तू सुन ले आजा, चाहत के रंग चढ़ा जा
+इनको तू सुन ले आजा, चाहत के रंग चढ़ा जा
+कहना कभी तो मेरा मान हाए
+
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+
+लगता है ये क्यों मुझे, सदियों से चाहूँ तुझे
+लगता है ये क्यों मुझे, सदियों से चाहूँ तुझे
+मेरे सपनो में आ के, अपना मुझको बना के
+मेरे सपनो में आ के, अपना मुझको बना के
+मुझपे तू कर एहसान हाए
+
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+
+तुझे देख देख सोना, तुझे देख कर है जगना
+मैंने ये जिंदगानी, संग तेरे बितानी
+तुझमें बसी है मेरी जान हाए
+
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+जिया धड़क धड़क, जिया धड़क धड़क
+जिया धड़क धड़क जाए
+
+
+</pre></div>   
+    
+     
+
+<button type="button" class="collapsible">O Rangrezz - F</button>
+<div class="content"><pre>
+ओ, रंगरेज़
+ओ, रंगरेज़, तेरे रंग दरिया में
+ओ, रंगरेज़, तेरे रंग दरिया में
+डूबना है बस तेरा बन के
+हाय, नहीं रहना दूजा बन के
+
+एक भी साँस अलग नहीं लेनी
+एक भी साँस अलग नहीं लेनी
+खेंच लेना प्राण इस तन के
+हाय, नहीं रहना दूजा बन के    
+
+अपने ही रंग में मुझ को रंग दे
+धीमे-धीमे रंग में मुझ को रंग दे
+सौंधे-सौंधे रंग में मुझ को रंग दे
+रंग दे ना, रंग दे ना, रंग दे ना
+
+ओ, अपने ही रंग में मुझ को रंग दे
+धीमे-धीमे रंग में मुझ को रंग दे
+सौंधे-सौंधे रंग में मुझ को रंग दे
+रंग दे ना, रंग दे ना, रंग दे ना
+
+माला में आ तुझ को पिरो लूँ
+तुझे पहनूँ, सजन
+होंठों में आ, सरगम सा बोलूँ
+तुझे रट लूँ, सजन
+
+हो, नैनों में बस छब तेरी लहराए
+छलके, छलके, छलके रे
+बरसे हल्के-हल्के
+
+अपने ही रंग में...
+हो, अपने ही रंग में मुझ को रंग दे
+धीमे-धीमे रंग में मुझ को रंग दे
+सौंधे-सौंधे रंग में मुझ को रंग दे
+रंग दे ना, रंग दे ना, रंग दे ना
+</pre></div>    
+
+    
+    
+<button type="button" class="collapsible">Afreen - E/F/F#</button>
+<div class="content"><pre>
+Aisa dekha nahi khoobsurat koi
+Jism jaise Ajanta ki murat koi
+Jism jaise nigahon pe jadoo koi
+Jism nagma koi jism khushboo koi
+Jism jaise mehakti hui chandni
+Jism jaise machalti hui ragini
+Jism jaise ke khilta hua ek chaman
+Jism jaise ke suraj ki pehli kiran
+Jism tarsha hua dilkasho dilnashin
+Sandli sandli marmari marmari
+
+Husan-e-jaana ki tareef mumkin nahi
+Husan-e-jaana ki tareef mumkin nahi
+Afreen afreen afreen afreen
+Tu bhi dekhe agar toh kahe humnashin
+Afreen afreen afreen afreen
+Husan-e-jaana ki tareef mumkin nahi
+Husan-e-jaana ki tareef mumkin nahi
+
+Jane kaisi bandhi tune akhiyon ke dor
+Mann mera khicha chala aaya teri aor
+Mere chehre ki subah zulfon ki shaam
+Mera sab kuch hai piya ab se tere naam
+Nazron ne teri chhua toh hai ye jadoo hua
+Hone lagi hoon main haseen
+Afreen afreen afreen
+Afreen afreen afreen
+Afreen afreen afreen
+Afreen afreen afreen
+[Verse 3: Rahat Fateh Ali Khan]
+Chehra ek phool ki tarah shadaab hai
+Chehra uska hai ya koi mahtaab hai
+Chehra jaise ghazal, chehra jaane ghazal
+Chehra jaise kali, chehra jaise kanwal
+Chehra jaise tasavur bhi, tasveer bhi
+Chehra ek khwab bhi, chehra tabeer bhi
+Chehra koi aliflailvi dastaan
+Chehra ek pal yakeen, chehra ek pal gumah
+Chehra jaisa ke chehra kahin bhi nahi
+Mahrooh-mahrooh mehjabin-mehjabin
+
+Husn-e-jaana ki tareef mumkin nahi
+Husn-e-jaana ki tareef mumkin nahi
+Afreen afreen afreen afreen
+Tu bhi dekhe agar toh kahe humnashin
+Afreen afreen afreen afreen
+Usne jaana ki tareef mumkin nah
+(Afreen afreen)
+
+[Sargam]
+</pre></div>
+
+    
+    
+<button type="button" class="collapsible">Aaj Ibadat - C#</button>
+<div class="content"><pre>
+ओम् मंगलम भगवान विष्णु
+मंगलम गरुड़ ध्वज
+ओम् जय जय ओम्
+मंगलम पुण्डरीकाक्ष, मंगलाय तनो हरि
+
+आज इबादत
+आज इबादत रूबरू हो गयी
+जो मांगी थी, जो मांगी थी
+उस दुआ से गुफ्तगू हो गयी
+मेरे मौला, मेरे मौला
+तेरा शुक्रिया
+आज इबादत...
+
+दर्द के अंधेरों से, आ गए उजालों में
+इश्क के चरागों का, नूर है ख्यालों में
+नज़रों से तेरी चाक
+दिल पे रफ़ू हो गयी
+मेरे मौला, मेरे मौला
+तेरा शुक्रिया
+
+आज इबादत रूबरू हो गयी
+ओम् मंगलम भगवान विष्णु
+मंगलम गरुड़ ध्वज
+मंगलम पुण्डरीकाक्ष
+मंगलाय तनो हरि
+    
+</pre></div>    
+
+
+    
+<button type="button" class="collapsible">Aya tere dar par</button>
+<div class="content">
+
+  <pre>
+
+    जो बंदिशें थी ज़माने की तोड़ आया हूँ
+मैं तेरे वास्ते दुनिया को छोड़ आया हूँ
+
+आया तेरे दर पर दीवाना
+आया तेरे दर पर दीवाना
+आया हुआ आया
+आया तेरा दीवाना
+आया तेरे दर पर दीवाना
+आया तेरे दर पर दीवाना
+
+तेरा दीवाना, तेरा दीवाना, तेरा दीवाना
+
+आया तेरे दर पर दीवाना
+आया तेरे दर पर दीवाना
+
+तेरा दीवाना (तेरा), तेरा दीवाना (दीवाना)
+तेरा दीवाना (तेरा), तेरा दीवाना
+
+तेरा दीवाना, तेरा दीवाना, तेरा दीवाना
+
+आया तेरे दर पर दीवाना
+आया तेरे दर पर दीवाना
+
+ये है तेरा ही सौदाई
+ये है तेरा ही शहदाई
+ये है तेरा ही सौदाई
+ये है तेरा ही शहदाई
+
+तेरे इश्क़ में है इसे मर जाना
+
+आया तेरे दर पर दीवाना
+आया तेरे दर पर दीवाना
+
+तेरा जलवा जो पाऊँ
+मैं हर ग़म भूल जाऊँ
+तेरा जलवा जो मैं पाऊँ
+मैं हर ग़म भूल जाऊँ
+
+ये आसूँ जो है बहते
+बस इतना है ये कहते
+कहाँ तू और कहाँ मैं?
+पराया हूँ यहँ मैं
+
+करम इतना अगर हो
+के मुझपर इक नज़र हो
+करम इतना अगर हो
+के मुझपर इक नज़र हो
+
+जानो दिल वार दूँ मैं
+ज़िंदगी हार दूँ मैं
+जैसे शम्मा पे मरता है परवाना
+
+आया तेरे दर पर दीवाना
+आया तेरे दर पर दीवाना
+आया...
+
+आया तेरे दर पर तेरा ही दीवाना
+आया तेरे दर पर तेरा ही दीवाना
+दीवाना तेरा, दीवाना तेरा
+दीवाना तेरा, दीवाना तेरा
+दीवाना तेरा
+
+दीवाना तेरा, दीवाना तेरा
+दीवाना तेरा
+दीवाना तेरा, दीवाना तेरा
+दीवाना तेरा
+
+आया तेरे दर पर दीवाना, दीवाना, दीवाना
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+
+ये सितम का रिवाज क्यूँ है?
+जैसा है ये समाज क्यूँ है?
+ये दुनिया की हैं रश्में
+मैं हूँ अब इनके बस में
+ये जो दुनिया की हैं रश्में
+मैं हूँ अब इनके ही बस में
+
+ना पूछो, क्या गिला है
+मुझे ग़म क्यूँ मिला है?
+तुम्हें मैं क्या बताऊँ!
+मोहब्बत ज़ुल्म है क्यूँ?
+कोई रोता है क्यूँ?
+ऐसा होता है क्यूँ?
+क्यूँ दिल ये हर एक है अंजाना?
+
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+ये किस माहौल में हम हैं?
+खुशी के भेस में ग़म हैं
+किसे अपना कहें? किसे बेग़ाना?
+
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+
+आया किस मोड़ पे मेरा अफ़साना?
+आया किस मोड़ पे मेरा अफ़साना?
+
+अफ़साना मेरा, अफ़साना मेरा
+अफ़साना मेरा, अफ़साना मेरा
+अफ़साना मेरा, अफ़साना मेरा
+अफ़साना मेरा, अफ़साना मेरा
+अफ़साना मेरा, अफ़साना मेरा
+अफ़साना मेरा, अफ़साना मेरा
+अफ़साना मेरा, अफ़साना मेरा
+अफ़साना मेरा
+आया किस मोड़ पे अफ़साना, अफ़साना, अफ़साना?
+
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+आया किस मोड़ पे अफ़साना?
+</pre>
+
+</div>
+
+    
+
+<button type="button" class="collapsible">Arziyaan</button>
+<div class="content">
+  <pre>
+Arziyaan Ar Rahman Lyrics
+
+Arziyan saari main,
+Chehre pe likh ke laaya hu,
+Tum se kya maangu main,
+Tum khud hi samajh lo,
+Ya maula.. maula maula..
+Mere maula..maula
+Maula maula maula mere maula,
+Maula maula maula mere maula,
+Maula maula maula maula,
+Maula maula maula maula,
+Darare darare hain maathe pe maula,
+Murammat muqadaar ki kar do maula,
+Mere maula..
+Tere darr pe jhuka hu, mita hu bana hu,
+Tere darr pe jhuka hu, mita hu bana hu,
+Murammat muqadaar ki kar do maula,
+Murammat muqadaar ki kar do maula..
+
+[Jo bhi tere darr aaya, jhukne jo sar aaya,
+Mastiyaan piye sab ko,jhoomta nazar aaya] -2 times
+Pyaas leke aaya tha dariyaa wo bhar laaya,
+Noor ki baarish mein bheegta sa tarr aaya,
+Noor ki baarish mein ohhoooo,
+Noor ki baarish mein bheegta sa tarr aaya,
+
+
+Maula maula maula mere maula,
+Maula maula maula mere maula,
+Maula maula maula maula,
+Maula maula maula maula,
+Darare darare hain maathe pe maula,
+Murammat muqadaar ki kar do maula,
+Mere maula..
+[Jo bhi tere darr aaya, jhukne jo sar aaya,
+Mastiyaan piye sab ko,jhoomta nazar aaya] -2 times
+
+Hooo ek khushbu aati thi,
+Hooo ek khushbu aati thi,
+Main bhatakta jaata tha,
+Reshmi si maaya thi,
+Aur main taktaa jaata tha,
+Jab teri gali aaya, sach tabhi nazar aaya  2 times
+Mujh mein hi woh khushbu thi,
+Jisse tune milwaya,
+Maula maula maula mere maula,
+Maula maula maula mere maula,
+Maula maula maula maula,
+Maula maula maula maula,
+Darare darare hain maathe pe maula,
+Murammat muqadaar ki kar do maula,
+Mere maula..
+
+Haaa…aaaa
+Toot ke bikharna mujhko zarur aata hai,
+Hoooo toot ke bikharna mujhko zarur aata hai,
+Warna ibaadat wala shahur aata hai,
+Sajde mein rehne do, ab kahin naa jaunga,
+Sajde mein rehne do, ab kahin naa jaunga,
+Ab jo tumne thukraya to sawar naa paaunga,
+Maula maula maula mere maula
+Maula maula maula maula
+Maula maula maula maula
+Darare darare hain maathe pe maula,
+Murammat muqadaar ki kar do maula,
+Mere maula..
+
+Sar utha ke maine to kitni khwahishein ki thi,
+Kitne khwab dekhe the, kitni koshishein ki thi,
+Jab tu rubaroo aaya, aaaa,
+Jab tu rubaroo aaya, nazre naa mila paaya,
+Sar jhuka ke ek pal mein, hooo
+Sar jhuka ke ek pal mein maine kya nahi paaya,
+[Maula maula maula mere maula,
+Maula maula maula mere maula,
+Maula maula maula maula,
+Maula maula maula maula]- 2 times
+Mere maula..mere maula
+
+[Mora piya ghar aaya, mora piya ghar aaya,
+Mora piya ghar aaya, mora piya ghar aaya]  4 times
+Maula maula maula mere maula,
+Maula maula maula mere maula,
+Maula maula maula maula,
+Mere maula maula maula maula,
+Mere maula maula maula maula,
+Mere maula
+  </pre>
+    </div>
+
+
+
+<button type="button" class="collapsible">Shah ka rutba</button>
+<div class="content">
+  <pre>
+Ho o…
+Shah ka rutba shehanshahon si teri baat hai
+Shah ka rutba shehanshahon si teri baat hai
+
+Ho.. Shahon ka jo Shah uska tere sar pe hath hai
+Shahon ka jo Shah uska tere sar pe hath hai
+Tere qadamon ke tale mitti bhi sona bann gayi
+Jar huaa dushman jahaan shamsheer teri tan gayi
+
+Tu wali hai tu meherman hai nigehmaan hai tu hi
+Hai farishtey bhi parishtish mein teri qurbaan wallah
+Tu wali hai tu meherman hai nigehmaan hai tu hi
+Ban gaya kanoon jo bhi tu likhe parvaan wallah ho
+
+Nazara jannaton ka aaj tere ru-b-ru hai
+Tera Lakht-e-jigar saaya hai tera hu-b-hu hai
+Haan sadke aaj uske sar ke sehre ke sabhi hain
+Ki teri saltnat ke takht ka woh jaanasheen hai
+
+Guroor yeh, jalwa rahe
+..*
+
+Teri kismat khud tere haatho’n khilona bann gayi
+Jar huaa dushman jahaan shamsheer teri tann gayi
+Tu wali hai tu meherman hai nigehmaan hai tu hi
+Hai farishtey bhi parishtish mein teri qurbaan wallah
+Tu wali hai tu meherman hai nigehmaan hai tu hi
+Ban gaya kanoon jo bhi tu likhe parvaan wallah ho
+
+Ghar deewane aam naa ho, koi Akbar naa huaa
+Jo tumhaare sar jhuke toh shenshah main huaa
+Allah raha mera har pal hafeez tto safar yeh tai hua
+
+Ghar deewane aam naa ho, koi Akbar na huaa
+
+Chaar majboot naujawaan kandhe
+Tujhko tere Khuda ne bakhshe hain
+Inke haathon ki jo laqeerein hain
+Tere dono jahaan ke nakshe hain
+
+Zindagi toh har Qadam nayi disha mein hai
+Yeh hi toh mere sheh-maat hain
+Yeh dono meri Qaaynaat hain yaa
+
+Chaar majboot naujawaan kandhe
+Tujhko tere Khuda ne bakhshe hain
+Inke haathon ki jo laqeerein hain
+Tere dono jahaan ke nakshe hain
+
+Ya wallah ya maula..
+  </pre>
+    </div>
+
+
+
+<button type="button" class="collapsible">Ranjheya Ve</button>
+<div class="content">
+<pre>
+दम नाल दम भरांगी रांझेया वे
+दम नाल दम भरांगी रांझेया वे
+जिवें कहेगा करांगी रांझेया वे
+जिवें कहेगा करांगी रांझेया वे
+
+दम नाल दम भरांगी रांझेया वे
+दम नाल दम भरांगी रांझेया वे
+जिवें कहेगा करांगी रांझेया वे
+जिवें कहेगा करांगी रांझेया वे
+
+मेरा जिस्म ते जान ईमान वी तू
+मेरा जिस्म ते जान ईमान वी तू
+मेरा रब्ब रसूल कुरान वी तू
+मेरा रब्ब रसूल कुरान वी तू
+
+सर कदमां ते धरांगी रांझेया
+सर कदमां ते धरांगी रांझेया
+जिवें कहवेगा करांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+
+तेरे हुक्म ते जान निसार कर सां
+तेरे हुक्म ते जान निसार कर सां
+तेनु सोहणिया रज्ज के प्यार कर सां
+तेनु सोहणिया रज्ज के प्यार कर सां
+
+तेरा पानी भी भरांगी रांझेया वे
+तेरा पानी भी भरांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+
+मुख मोड़ न यार दा कम्म नहीं
+मुख मोड़ न यार दा कम्म नहीं
+यारी तोड़ न प्यार दा कम्म नहीं
+यारी तोड़ न प्यार दा कम्म नहीं
+
+तेरे नाल मैं मरांगी रांझेया वे
+तेरे नाल मैं मरांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+
+दम नाल दम भरांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+दम नाल दम भरांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+जिवें कहवेगा करांगी रांझेया वे
+
+जिवें कहवेगा करांगी रांझेया वे
+कहवेगा करांगी रांझेया वे
+
+
+</pre></div>
+
+    
+    
+<button type="button" class="collapsible">Saiyoni</button>
+<div class="content">
+<pre>
+Har dam naam sambhaal saaeen da
+Har dam naam sambhaal saaeen da
+ Ta toon asthar theevein
+
+Cling to your Lord’s name at every moment
+and with each breath
+You may thus become steadfast and firm
+
+Har dam naam sambhaal saaeen da
+ Ta toon asthar theevein
+
+Cling to your Lord’s name at every moment
+and with each breath
+You may thus become steadfast and firm
+
+Kahwe Husain Faqeer saaeen da
+ Main nahi bas tu
+
+Husain, God’s lowly servant, says
+There is no me, only You!
+
+Sayonee
+Sayonee
+Chain ik pal nahi
+Chain ik pal nahi
+Chain ik pal nahi
+ Aur koyi hall nahi
+
+O my dear friends
+O my dear friends
+Not a moment of peace
+Not a moment of peace
+Not a moment of peace
+And no way out
+
+Sayonee
+ Sayonee
+
+O my dear friends
+O my dear friends
+
+Kaun mode muhaar
+Muhaar
+Kaun mode muhaar…
+ Kaun mode muhaar…
+
+Who will turn the camel round?
+…turn the camel round?
+Who will turn the camel round?
+Who will turn the camel round?
+
+Koyi saanwal nahi
+Chain ik pal nahi
+Chain ik pal nahi
+Chain ik pal nahi
+ Aur koyi hall nahi
+
+Punnun, my lover, is long gone
+Not a moment of peace
+Not a moment of peace
+Not a moment of peace
+And no way out
+
+Sayonee
+ Sayonee
+
+O my dear friends
+O my dear friends
+
+Kya bashar ki bisaat
+Bisaat
+Kya bashar ki bisaat
+ Kya bashar ki bisaat
+
+What is the worth of a mortal being?
+…worth…
+What is the worth of a mortal being?
+What is the worth of a mortal being?
+
+Aaj hai kal nahi
+Chain ik pal nahi
+Chain ik pal nahi
+Chain ik pal nahi
+ Aur koyi hall nahi
+
+Here today, and gone tomorrow
+Not a moment of peace
+Not a moment of peace
+Not a moment of peace
+And no way out
+
+Sayonee
+ Sayonee
+
+O my dear friends
+O my dear friends
+
+Zaahir har ik manzar mein
+ Tu har pas-manzar mein tu (x2)
+
+You are manifest in all seen and unseen things
+
+Masjid mein tu
+Mandir mein tu
+ Jeewan saagar mein tu
+
+In the mosque
+In the temple
+In the ocean of existence
+
+Saaeen tu hi
+Mera saccha saaeen tu hai
+Saaeen tu hi
+Mera saccha saaeen tu hai
+Main tera banda, tu hi mera maula saaeen
+Tu hi mera maula saaeen
+Sayonee
+Sayonee
+Sayonee
+Sayonee
+Allaah
+Allaah
+Allaah
+ Allaah
+
+In the mosque
+In the temple
+In the ocean of existence
+O Lord, only You
+You are my true Lord
+O Lord, only You
+You are my true Lord
+I am your servant, and you are my beloved Master
+You are my beloved Master
+O my dear friends
+O my dear friends
+O my dear friends
+O my dear friends
+Allah!
+Allah!
+Allah!
+Allah!
+
+Translation by Zahra Sabri
+
+</pre></div>
+
+
+    
+<button type="button" class="collapsible">Maula Mere - Roop Kumar Rathod</button>
+<div class="content">
+<pre>
+[Chorus]
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+
+[Verse 1]
+आँखें तेरी (ah)
+आँखें तेरी, कितनी हसीं
+के इनका आशिक़, मैं बन गया हूँ
+मुझको बसा ले, इनमें तू
+
+[Chorus]
+(इश्क हे)
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+(इश्क हे)
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+(इश्क हे)
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+
+[Verse 2]
+के इनका आशिक़, मैं बन गया हूँ
+मुझको बसा ले, इनमें तू
+मुझसे ये हर घड़ी, मेरा दिल कहे
+तुम ही हो उसकी आरज़ू
+मुझसे ये हर घड़ी, मेरे लब कहे
+तेरी ही हो सब गुफ्तगू
+बातें तेरी, इतनी हसीं
+मैं याद इनको, जब करता हूँ
+फूलों सी आए खुशबू
+
+[Verse 3]
+रख लूँ छूपा के मैं कहीं तुझको
+साया भी तेरा ना मैं दूं
+रख लूँ बना के कहीं घर, मैं तुझे
+साथ तेरे मैं ही रहूं
+जुल्फें तेरी, इतनी घनी
+देख के इनको, ये सोचता हूँ
+साये में इनके मैं जियूं
+
+[Chorus]
+(इश्क हे)
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+(इश्क हे)
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+(इश्क हे)
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+मौला मेरे, मौला मेरे, मौला मेरे, मौला मेरे
+
+[Outro]
+मेरा दिल यही बोला, मेरा दिल यही बोला
+यारा राज ये उसने है मुझ पर खोला
+के है इश्क़ मोहब्बत, जिसके दिल में
+उसको पसंद करता है मौला मेरा
+मेरा दिल यही बोला, मेरा दिल यही बोला
+यारा राज ये उसने है मुझ पर खोला
+के है इश्क़ मोहब्बत, जिसके दिल में
+उसको पसंद करता है मौला
+</pre></div>
+
+    
+<button type="button" class="collapsible">Kooch Na Karin</button>
+<div class="content">
+<pre>
+Azlaan ton apne dil de vich
+Bas teri yaad vasaai hoi ae
+Mere vich mera kujh vi nai
+Jind tereei naawe lai hui ae
+
+Tainu takkeya, bina nai dil rajda
+Tainu takkeya, bina nai dil rajda
+Mohalle vich hon kooch na karin
+Tainu takkeya, bina nai dil rajda
+Mohalle vich hon kooch na karin
+
+Tainu takkeya, bina nai dil rajda
+Tainu takkeya, bina nai dil rajda
+Mohalle vich hon kooch na karin
+Tera jaana seene teer wangu vajda
+Tera jaana, seene teer wangu vajda
+
+Mohalle vich hon kooch na karin
+Tainu takkeya, bina nai dil rajda
+Mohalle vich hon kooch na karin
+
+Tere naina vich rab sachha vassda
+Tere naina vich, rab sachha vassda
+Tera pyaar sanu eho pia dasda
+Tera pyaar sanu eho pia dasda
+Tere bina nai, pyaar sada sajda
+Tere bina nai, pyaar sada sajda
+
+Mohalle vich hon kooch na karin
+Ve mahiya
+Mohalle vich hon kooch na karin
+
+Mere samne aa ke baitha raho
+Mere samne aa ke baitha raho
+Tu zulf saja ke baitha raho
+Tu zulf saja ke baitha raho
+Ajj nain mila ke baitha raho
+Ajj nain mila ke baitha raho
+
+Mainu kol bitha ke baitha raho
+Tainu takkeya
+Ho, tainu takkeya
+Tainu takkeya, bina nai dil rajda
+Tainu takkeya, bina nai dil rajda
+Mohalle vich?hon kooch na karin
+Tainu takkeya, bina nai dil rajda
+Mohalle vich hon kooch na karin
+Tainu takkeya bina nai dil rajda
+Tainu takkeya bina nai dil rajda
+Mohalle vich hon kooch na karin
+</pre></div>
+
+    
+<button type="button" class="collapsible">****</button>
+
+<div class="content">
+<pre>
+****
+</pre></div>
+
+    
+<button type="button" class="collapsible">****</button>
+
+<div class="content">
+<pre>
+****
+</pre></div>
+
+    
+<button type="button" class="collapsible">****</button>
+
+<div class="content">
+<pre>
+****
+</pre></div>
+
+
+
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<script>
+
+/* ========================================= */
+/* COLLAPSIBLE SONGS                         */
+/* ========================================= */
+
+var coll = document.getElementsByClassName("collapsible");
+
+for (var i = 0; i < coll.length; i++) {
+
+  coll[i].addEventListener("click", function() {
+
+    this.classList.toggle("active");
+
+    var content = this.nextElementSibling;
+
+    if (content.style.display === "block") {
+
+      content.style.display = "none";
+
+    } else {
+
+      content.style.display = "block";
+
+    }
+
+  });
+
+}
+
+
+/* ========================================= */
+/* FONT SIZE CONTROL                         */
+/* ========================================= */
+
+var savedFontSize = localStorage.getItem("lyricsFontSize");
+
+var fontSize;
+
+if (savedFontSize === null) {
+
+  fontSize = 16;
+
+} else {
+
+  fontSize = parseInt(savedFontSize);
+
+}
+
+
+/* Change font size */
+
+function changeFontSize(amount) {
+
+  fontSize = fontSize + amount;
+
+
+  /* Minimum font size */
+
+  if (fontSize < 10) {
+    fontSize = 10;
+  }
+
+
+  /* Maximum font size */
+
+  if (fontSize > 40) {
+    fontSize = 40;
+  }
+
+
+  /* Find all lyrics */
+
+  var lyrics = document.querySelectorAll(".content pre");
+
+
+  /* Change font size */
+
+  for (var i = 0; i < lyrics.length; i++) {
+
+    lyrics[i].style.fontSize = fontSize + "px";
+
+  }
+
+
+  /* Show current font size */
+
+  document.getElementById("fontSizeDisplay").textContent =
+    fontSize + "px";
+
+
+  /* Save font size */
+
+  localStorage.setItem("lyricsFontSize", fontSize);
+
+}
+
+
+/* ========================================= */
+/* APPLY SAVED FONT SIZE WHEN PAGE LOADS     */
+/* ========================================= */
+
+changeFontSize(0);
+
+</script>
+
+
+</body>
+</html>
